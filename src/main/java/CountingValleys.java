@@ -3,7 +3,7 @@ public class CountingValleys {
     static int countingValleys(int n, String s) {
         char[] chars = s.toCharArray();
         int currentPosition = 0;
-        int vallyesCount = 0;
+        int valleysCount = 0;
 
         for (int i = 0; i < chars.length; i++) {
             char currentChar = chars[i];
@@ -13,10 +13,10 @@ public class CountingValleys {
                 currentPosition--;
             }
             if (currentPosition == 0 && chars[i] == 'U') {
-                vallyesCount++;
+                valleysCount++;
             }
         }
-        return vallyesCount;
+        return valleysCount;
     }
 
     public static void main(String[] args) {

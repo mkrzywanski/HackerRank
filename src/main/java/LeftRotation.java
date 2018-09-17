@@ -1,20 +1,20 @@
 import java.util.Arrays;
 
 public class LeftRotation {
-    static int[] solution(int[] arr, int rotations) {
-        int[] newTab = new int[arr.length];
+    static int[] solution(int[] array, int rotations) {
+        int[] newTab = new int[array.length];
 
-        int realRotationsNumber = rotations % arr.length;
+        int realRotationsNumber = rotations % array.length;
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             int newIndex = i - realRotationsNumber;
             if (newIndex < 0) {
-                newIndex = arr.length - Math.abs(newIndex);
+                newIndex = array.length - Math.abs(newIndex);
             }
-            if (newIndex != arr.length) {
-                newTab[newIndex] = arr[i];
+            if (newIndex != array.length) {
+                newTab[newIndex] = array[i];
             } else {
-                newTab[0] = arr[i];
+                newTab[0] = array[i];
             }
         }
         return newTab;

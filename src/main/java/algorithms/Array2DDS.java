@@ -1,4 +1,7 @@
+package algorithms;
+
 public class Array2DDS {
+    //NOT 100% DONE
     // Complete the hourglassSum function below.
     static int hourglassSum(int[][] arr) {
         int maxSum = Integer.MIN_VALUE;
