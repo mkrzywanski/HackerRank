@@ -9,8 +9,8 @@ public class AlternatingCharacters {
     static int alternatingCharacters(String s) {
         int count = 0;
         char currentChar = s.charAt(0);
-        for(int i = 1; i < s.length();i++) {
-            if(s.charAt(i) == currentChar) {
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(i) == currentChar) {
                 count++;
             } else {
                 currentChar = s.charAt(i);

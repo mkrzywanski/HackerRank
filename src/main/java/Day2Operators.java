@@ -6,7 +6,7 @@ public class Day2Operators {
         double tip = (meal_cost * tip_percent) / 100;
         double tax = (meal_cost * tax_percent) / 100;
         result = meal_cost + tip + tax;
-        System.out.println((int)Math.floor(result));
+        System.out.println((int) Math.floor(result));
 
     }
 

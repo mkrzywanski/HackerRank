@@ -12,8 +12,8 @@ public class MarkAndToys {
 
         int toyCount = 0;
         int moneySoFar = 0;
-        for(int i = 0; i < prices.length;i++) {
-            if(moneySoFar + prices[i] <= k) {
+        for (int i = 0; i < prices.length; i++) {
+            if (moneySoFar + prices[i] <= k) {
                 moneySoFar += prices[i];
                 toyCount++;
             } else {

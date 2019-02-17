@@ -9,6 +9,7 @@ public class MinimumSwaps2 {
         a[i] = a[j];
         a[j] = temp;
     }
+
     static int minimumSwaps(int[] arr) {
         int swapCount = 0;
         for (int i = 0; i < arr.length; i++) {

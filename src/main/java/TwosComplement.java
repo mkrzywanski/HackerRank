@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class TwosComplement {
 
+    private static final Scanner scanner = new Scanner(System.in);
+
     static long twosCompliment(long a, long b) {
         long sum = 0;
         for (long i = a; i <= b; i++) {
@@ -17,9 +19,7 @@ public class TwosComplement {
         return sum;
     }
 
-    private static final Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) throws IOException {
-        System.out.println(twosCompliment(-2,0));
+        System.out.println(twosCompliment(-2, 0));
     }
 }

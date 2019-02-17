@@ -4,16 +4,16 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class AVeryBigSum {
+    private static final Scanner scanner = new Scanner(System.in);
+
     // Complete the aVeryBigSum function below.
     static long aVeryBigSum(long[] ar) {
         long sum = 0;
-        for(int i = 0; i < ar.length;i++) {
+        for (int i = 0; i < ar.length; i++) {
             sum += ar[i];
         }
         return sum;
     }
-
-    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));

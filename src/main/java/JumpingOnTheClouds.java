@@ -3,7 +3,7 @@ public class JumpingOnTheClouds {
     static int jumpingOnClouds(int[] c) {
         int jumps = 0;
         int index = 0;
-        while (index + 1 < c.length ) {
+        while (index + 1 < c.length) {
             if (index + 2 < c.length && c[index + 2] == 0) {
                 jumps++;
                 index += 2;

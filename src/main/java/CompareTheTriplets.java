@@ -19,11 +19,11 @@ public class CompareTheTriplets {
         List<Integer> result = new ArrayList<>(2);
         result.add(0);
         result.add(0);
-        for(int i = 0; i < a.size();i++) {
-            if(a.get(i) > b.get(i)) {
+        for (int i = 0; i < a.size(); i++) {
+            if (a.get(i) > b.get(i)) {
                 Integer value = result.get(0);
                 result.set(0, value + 1);
-            } else if (a.get(i) < b.get(i)){
+            } else if (a.get(i) < b.get(i)) {
                 Integer value = result.get(1);
                 result.set(1, value + 1);
             }

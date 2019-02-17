@@ -11,10 +11,10 @@ public class Pangrams {
         Set<Character> sentenceCharsSet = new HashSet<>();
         Set<Character> alphabetCharsSet = createAlphabetCharactersSet();
 
-        for(char c : s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             sentenceCharsSet.add(c);
         }
-        if(sentenceCharsSet.equals(alphabetCharsSet)) {
+        if (sentenceCharsSet.equals(alphabetCharsSet)) {
             return "pangram";
         } else {
             return "not pangram";
@@ -22,7 +22,7 @@ public class Pangrams {
     }
 
     static Set<Character> createAlphabetCharactersSet() {
-        return ALPHABET.chars().mapToObj(i -> (char)i).collect(Collectors.toSet());
+        return ALPHABET.chars().mapToObj(i -> (char) i).collect(Collectors.toSet());
 
     }
 

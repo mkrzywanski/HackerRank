@@ -1,17 +1,17 @@
 public class HackerRankInString {
     // Complete the hackerrankInString function below.
     static String hackerrankInString(String s) {
-        char[] chars = new char[] {'h','a','c','k','e','r','r','a','n','k'};
+        char[] chars = new char[]{'h', 'a', 'c', 'k', 'e', 'r', 'r', 'a', 'n', 'k'};
         boolean[] visitedTab = new boolean[chars.length];
         int foundChars = 0;
         int charIndexToSearch = 0;
-        for(int i = 0;i < s.length();i++) {
-            if(!visitedTab[charIndexToSearch] && s.charAt(i) == chars[charIndexToSearch]) {
+        for (int i = 0; i < s.length(); i++) {
+            if (!visitedTab[charIndexToSearch] && s.charAt(i) == chars[charIndexToSearch]) {
                 visitedTab[charIndexToSearch] = true;
                 foundChars++;
                 charIndexToSearch++;
             }
-            if(foundChars == chars.length) {
+            if (foundChars == chars.length) {
                 return "YES";
             }
         }
